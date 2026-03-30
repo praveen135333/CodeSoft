@@ -22,12 +22,17 @@ def task():
                 if addNewTask == "yes":
                     tasks.append(updateTask)
         elif option == 3:
-            deleteTask = input("Enter the task you want to delete")
-            if deleteTask.lower() in [t.lower() for t in tasks]:
-                indexValue = tasks.index(deleteTask)
-                tasks.remove(deleteTask)
-            else:
-                print("No matching task found.")
+            deleteTask = input("Enter the task you want to delete: ")
+            found = False
+            for t in tasks:
+                if t.lower() == deleteTask.lower():
+                    tasks.remove(t)   # remove the actual stored task
+                    print(f"Task '{t}' deleted.")
+                    found = True
+                    break
+                if not found:
+                    print("No matching task found.")
+
         elif option == 4:
             print(tasks)
         elif option == 5:
