@@ -26,13 +26,12 @@ def task():
             found = False
             for t in tasks:
                 if t.lower() == deleteTask.lower():
-                    tasks.remove(t)   # remove the actual stored task
+                    tasks.remove(t)
                     print(f"Task '{t}' deleted.")
                     found = True
                     break
                 if not found:
                     print("No matching task found.")
-
         elif option == 4:
             print(tasks)
         elif option == 5:
