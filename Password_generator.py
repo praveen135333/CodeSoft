@@ -1,6 +1,7 @@
 import random
 import string
-def passwordGenerator(length=8, use_upper=True, use_lower=True, use_numbers=True, use_special=True):
+password_length = int(input("Enter the length of password: "))
+def passwordGenerator(length=password_length, use_upper=True, use_lower=True, use_numbers=True, use_special=True):
     
     characters = ''
     if use_upper:
@@ -16,7 +17,7 @@ def passwordGenerator(length=8, use_upper=True, use_lower=True, use_numbers=True
         return 
     password = ''.join(random.choice(characters) for i in range(length))
     return password
-copy_of_password = passwordGenerator(12)
+copy_of_password = passwordGenerator(password_length)
 # passwordList = list(copy_of_password)
 
 with open("password.txt", "w") as f:
