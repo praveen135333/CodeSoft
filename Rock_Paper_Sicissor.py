@@ -12,7 +12,7 @@ def game():
     }
     print("-----Rock, Paper & Scissor Game-----")
     while True:
-        userChoice = input("Enter your choice: ")
+        userChoice = input("Enter your choice(rock, paper, scissor): ")
         botChoice = random.choice(option)
         print(f"Computer choice: {botChoice}")
         if botChoice == userChoice:
@@ -21,9 +21,10 @@ def game():
         else:
             if winRules[userChoice] == botChoice:
                 print("Congrats! You won.")
+                winCount=winCount+1
             else:
                 print("You lose!")
-                winCount=winCount+1
+                lossCount = lossCount+1
         playAgain = input("Do you want to play again(y/n)?\t")
         if playAgain == "y":
             continue
