@@ -1,4 +1,4 @@
-def task():
+def task(   ):
     tasks = []
     totalTasks = int(input("Enter no. of Tasks you want to add: "))
     for i in range(1, totalTasks+1):
@@ -10,7 +10,7 @@ def task():
             addTask = input("Enter the task you want to add: ")
             tasks.append(addTask)
         elif option == 2:
-            updateTask = input("Enter the task you want to update")
+            updateTask = input("Enter the task you want to update: ")
             if updateTask in tasks:
                 indexValue = tasks.index(updateTask)
 
@@ -18,7 +18,7 @@ def task():
                 tasks[indexValue] = newTask
             elif updateTask not in tasks:
                 print("No matching task found..")
-                addNewTask = input("Do you want to add this task(yes/no).")
+                addNewTask = input("Do you want to add this task(yes/no). ")
                 if addNewTask == "yes":
                     tasks.append(updateTask)
         elif option == 3:
