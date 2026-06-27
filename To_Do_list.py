@@ -34,7 +34,7 @@ def task():
                     print("No matching task found.")
         elif option == 4:
             print(tasks)
-        elif option == 5:
+        elif option == 5: 
             print("Exiting the TO_DO Simulator...\nThankyou for using TO_DO Simulator")
             return
 task()
