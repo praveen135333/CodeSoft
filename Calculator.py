@@ -24,6 +24,6 @@ def calculator():
     elif operation == 5:
         print("thanks for using calculator")
         return
-    else:
+    else: 
         print("wrong choice.. Please Start Again.")
 calculator()
