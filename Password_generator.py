@@ -10,7 +10,6 @@ def passwordGenerator(length=8, use_upper=True, use_lower=True, use_numbers=True
     if use_numbers:
         characters += string.digits
     if use_special:
-        # characters += string.punctuation
         characters += '@!?#&*$=/'
     if characters == '':
         print('Error: No character types selected.')
