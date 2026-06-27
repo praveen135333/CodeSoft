@@ -30,7 +30,7 @@ def game():
         elif playAgain == "n":
             print(f"Total no. of matches: {winCount+lossCount+drawCount}\ntotal wins: {winCount}\ttotal loses: {lossCount}\tdraw: {drawCount}")
             break
-        else: 
+        else:  
             print("Wrong choice!")
             break
 game()
