@@ -9,7 +9,7 @@ def contact_book():
     for name, phone in contact_list.items():
         print(f"{name}: {phone}")
         
-    # Searching a name in contact book
+    # Searching a name in contact
     search_name = input("Enter a name to search: ")
     if search_name in contact_list:
         print(f"{search_name}'s number is {contact_list[search_name]}")
